@@ -27,7 +27,35 @@ body {
 }
 
 @layer utilities {
-  .text-balance {
+  /* Removendo a propriedade não padrão text-wrap */
+  /* .text-balance {
     text-wrap: balance;
-  }
+  } */
+}
+
+input, textarea {
+  background-color: white; /* Cor de fundo para garantir visibilidade */
+  color: black; /* Cor do texto */
+  border: 1px solid #ccc; /* Borda padrão */
+  padding: 8px; /* Espaçamento interno */
+  border-radius: 4px; /* Cantos arredondados */
+  font-size: 16px; /* Tamanho da fonte */
+  line-height: 1.5; /* Altura da linha */
+  width: 100%; /* Largura total dos campos */
+}
+
+input:focus, textarea:focus {
+  border-color: #007bff; /* Cor da borda em foco */
+  outline: none; /* Remover o contorno padrão */
+}
+
+button {
+  border-radius: 4px; /* Cantos arredondados */
+  padding: 0.5rem 1rem; /* Espaçamento interno */
+  font-size: 1rem; /* Tamanho da fonte */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transição suave para a mudança de cor de fundo e transformação */
+}
+
+button:hover {
+  transform: scale(1.05); /* Aumenta o botão em 5% */
 }
